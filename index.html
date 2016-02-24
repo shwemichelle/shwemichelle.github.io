@@ -184,7 +184,7 @@ path, ._jsPlumb_endpoint {
 
     <div id="items">
 	
-        <div class="top"><button>Root State <button class="editor" onclick="location.href='/editor'" style="right:30px"><span class="glyphicon glyphicon-modal-window"></span></button></button>
+        <div class="top"><button>Root State <a href="/editor"><button class="editor" style="right:30px"><span class="glyphicon glyphicon-modal-window"></span></button></a></button>
         </div>
         </div>
                  
@@ -437,7 +437,7 @@ path, ._jsPlumb_endpoint {
    //when the Add Field button is clicked
 $("#add").click(function (e) {
 	//Append a new row of code to the "#items" div
-	$("#items").append('<div class="top"><input type="text" placeholder="Enter State Name" name="input[]"><button class="delete"><span class="glyphicon glyphicon-minus"></span></button><button class="editor" onclick="location.href='/editor'"><span class="glyphicon glyphicon-modal-window"></span></button></div>');
+	$("#items").append('<div class="top"><input type="text" placeholder="Enter State Name" name="input[]"><button class="delete"><span class="glyphicon glyphicon-minus"></span></button><a href="/editor"><button class="editor"><span class="glyphicon glyphicon-modal-window"></span></button></a></div>');
 });
         $("body").on("click", ".delete", function (e) {
 	$(this).parent("div").remove();
